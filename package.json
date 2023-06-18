@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "npm run prisma && node index.js",
     "start-dev": "nodemon index.js",
-    "prisma": "prisma generate",
-    "build": "echo 'Building the application...' && <your build command here>"
+    "prisma": "prisma generate"
   },
   "dependencies": {
     "@prisma/client": "^4.15.0",
