@@ -35,7 +35,7 @@ router.post('/', async (req, res) => {
 });
 
 
-router.post('/', async (req, res) => {
+router.get('/', async (req, res) => {
     try {
         const appSettings = await prisma.AppSettings.findMany();
         return res.status(200).send(appSettings);
