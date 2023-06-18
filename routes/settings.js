@@ -44,3 +44,5 @@ router.post('/', async (req, res) => {
         return res.status(500).send({ message: 'Failed to fetch app settings, Try again' });
     }
 })
+
+module.exports = router;

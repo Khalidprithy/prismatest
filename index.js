@@ -9,9 +9,9 @@ const port = process.env.PORT || 5000;
 app.use(express.json());
 
 // Mount user routes
-// app.use('/users', usersRouter);
-app.use('/settings', usersRouter);
-
+app.use('/users', usersRouter);
+app.use('/setting', settingsRouter);
+// app.use('/settings', settingsRouter);
 
 
 // Root route
