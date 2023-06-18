@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npx run prisma generate && npm run build && node index.js",
+    "start": "node index.js",
     "start-dev": "nodemon index.js",
     "prisma": "prisma generate",
     "build": "echo 'Building the application...' && <your build command here>"
