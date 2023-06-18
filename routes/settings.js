@@ -45,4 +45,9 @@ router.get('/', async (req, res) => {
     }
 })
 
+router.get('/hi', async (req, res) => {
+    res.send('hello there')
+})
+
+
 module.exports = router;
