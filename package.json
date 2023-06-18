@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npm run prisma && npm run build && node index.js",
+    "start": "npx run prisma generate && npm run build && node index.js",
     "start-dev": "nodemon index.js",
     "prisma": "prisma generate",
-    "build": "echo 'Building the application...' && npm run build"
+    "build": "echo 'Building the application...' && <your build command here>"
   },
   "dependencies": {
     "@prisma/client": "^4.15.0",
