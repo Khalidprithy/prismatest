@@ -1,18 +1,22 @@
 require('dotenv').config();
 const express = require('express');
 const usersRouter = require('./routes/users');
+const settingsRouter = require('./routes/settings');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 app.use(express.json());
 
 // Mount user routes
-app.use('/users', usersRouter);
+// app.use('/users', usersRouter);
+app.use('/settings', usersRouter);
+
+
 
 // Root route
 app.get('/', (req, res) => {
-    res.send('Welcome to the Express.js with Prisma and MongoDB app!');
+    res.send('Welcome to the turbo app!');
 });
 
 app.listen(port, () => {
